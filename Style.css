@@ -1,7 +1,8 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
+    text-decoration: none;
+    /* font-family: Gotham Rounded, sans-serif;  */
+    /* font-weight: normal;  */
 }
 
 body {
@@ -10,6 +11,17 @@ body {
     background: linear-gradient(to right, cyan, orange);
 }
  
+header {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: 900;
+    font-family:Gotham Rounded, sans-serif;
+    color: white;
+    font-style: italic;
+}
+
+
 .calculator-grid {
     display: grid;
     justify-content: center;
@@ -57,10 +69,17 @@ body {
     font-size: 2.5rem;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 
-@media screen and (max-width: 401px) {
-    body {
-    padding: 0;
-    margin:0;
-    }
 }
+
+footer i:hover {
+cursor: pointer;
+color: cadetblue;
+text-decoration: none;
+}
+
